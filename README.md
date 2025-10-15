@@ -13,6 +13,28 @@ The workflow includes data cleaning to remove duplicate and invalid records, com
 This project demonstrates technical competency in Python (Pandas, Matplotlib, Seaborn), applied financial interpretation, and the ability to derive actionable conclusions from complex numerical data. It reflects a real-world scenario where ratio analysis informs strategic financial decision-making.
 
 ---
+## Process Flow
+
+<img width="633" height="981" alt="Flowchart" src="https://github.com/user-attachments/assets/079aa078-8f9e-4638-87dc-7effd70991c0" />
+
+The flowchart above outlines the complete workflow followed in this analysis, from data preparation to final output generation. It provides a step-by-step view of how financial information was cleaned, processed, and transformed into analytical insights.
+
+### 1. Data Import and Validation
+The process begins with importing financial records into a DataFrame. The script checks for duplicate rows and removes them to ensure that subsequent analysis is based on unique, reliable data.
+
+### 2. Grouping and Statistical Computation
+Cleaned data is grouped by business state to calculate descriptive statistics such as mean, median, minimum, and maximum for each major financial variable. This establishes baseline comparisons across states.
+
+### 3. Financial Ratio Analysis
+The next stage filters out businesses with negative **Debt-to-Equity** ratios, which often indicate financial instability. A new measure, **Debt-to-Income**, is calculated for all businesses to capture the relationship between long-term debt and revenue.
+
+### 4. Data Integration
+All computed ratios and statistical summaries are stored in new DataFrames. These are then concatenated with the original dataset, forming an enhanced, unified structure for deeper analysis.
+
+### 5. Output and Visualization
+The final dataset serves as the foundation for all visualizations, including the correlation heatmap, state-level revenue and debt comparison, and distribution plots. Each visualization directly reflects the structured outputs from this workflow, ensuring analytical consistency and accuracy.
+
+---
 
 ## Correlation Matrix Analysis
 
